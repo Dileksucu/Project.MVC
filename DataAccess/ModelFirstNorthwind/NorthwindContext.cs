@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using DataAccess.ModelFirstNorthwind;
 using Microsoft.Extensions.Options;
+using DataAccess;
 
 public partial class NorthwindContext : DbContext
 {
@@ -72,6 +73,8 @@ public partial class NorthwindContext : DbContext
     public virtual DbSet<Supplier> Suppliers { get; set; }
 
     public virtual DbSet<Territory> Territories { get; set; }
+
+  
 
    
 
